@@ -29046,9 +29046,9 @@
 		</array>
 	</dict>
 	<key>disableMetalInLowPowerMode</key>
-	<false/>
+	<true/>
 	<key>disableMetalWhenUnplugged</key>
-	<false/>
+	<true/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
@@ -29056,6 +29056,6 @@
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 	<key>preferIntegratedGPU</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
