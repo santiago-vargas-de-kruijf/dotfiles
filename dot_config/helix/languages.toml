@@ -1,0 +1,4 @@
+[[language]]
+name = "python"
+language-servers = []
+formatter = { command = "black" , args = ["--stdin"] }
