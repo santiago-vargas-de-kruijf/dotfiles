@@ -1,5 +1,4 @@
 # package management
-tap "homebrew/cask"
 tap"buo/cask-upgrade"
 brew "mas"
 
