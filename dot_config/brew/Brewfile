@@ -1,0 +1,33 @@
+# package management
+tap "homebrew/cask"
+tap"buo/cask-upgrade"
+brew "mas"
+
+# environment management
+brew "chezmoi"
+
+# productivity
+cask "rectangle"
+cask "zen-browser"
+cask "font-fira-code"
+cask "alt-tab"
+brew "starship"
+cask "bruno"
+
+# delevopment
+tap "jesseduffield/lazygit"
+brew "fish"
+brew "helix"
+brew "neovim"
+brew "rustup"
+cask "iterm2"
+
+# tools
+brew "fd"
+brew "fzf"
+brew "git"
+brew "git-lfs"
+brew "jq"
+brew "taplo"
+brew "yazi"
+brew "zoxide"
