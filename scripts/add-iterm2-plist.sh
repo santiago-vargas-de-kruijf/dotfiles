@@ -9,8 +9,8 @@ cp "$PLIST" "$PLIST_TMP"
 echo "Prunning $PLIST_TMP xml tree from unwanted keys..."
 
 set +e
-plutil -remove "Window Arrangements" "$PLIST"
-plutil -remove "Default Arrangement Name" "$PLIST"
+plutil -remove "Window Arrangements" "$PLIST_TMP"
+plutil -remove "Default Arrangement Name" "$PLIST_TMP"
 set -e
 
 mv "$PLIST_TMP" "$(chezmoi source-path)/dot_config/iterm2/$DOMAIN.plist"
