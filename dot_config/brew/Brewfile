@@ -13,6 +13,7 @@ cask "alt-tab"
 brew "starship"
 brew "eza"
 cask "bruno"
+brew "zellij"
 
 # delevopment
 tap "jesseduffield/lazygit"
