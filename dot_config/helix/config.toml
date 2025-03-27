@@ -48,12 +48,13 @@ pageup = "no_op"
 pagedown = "no_op"
 home = "no_op"
 end = "no_op"
-# i = { o= "normal_mode"}
+# j = { k = "normal_mode"}
 
 [keys.normal]
 ret = ["save_selection", "goto_word"] # Go to definition in next view (split windows)
 A-s = "save_selection"
 C-s = ":write"
+C-y = ":sh zellij run -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/yazi-picker.sh open"
 
 # Editor navigation
 C-h = "jump_view_left"
@@ -67,7 +68,6 @@ S-h = "goto_previous_buffer"
 
 # Buffer management
 C-b = { o= ":buffer-close-others" }
-
 
 [keys.normal.space]
 q = ":quit"
