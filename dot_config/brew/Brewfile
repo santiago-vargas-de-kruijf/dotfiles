@@ -11,6 +11,7 @@ cask "zen-browser"
 cask "font-fira-code"
 cask "alt-tab"
 brew "starship"
+brew "eza"
 cask "bruno"
 
 # delevopment
