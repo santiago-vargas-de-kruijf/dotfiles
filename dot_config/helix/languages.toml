@@ -2,3 +2,10 @@
 name = "python"
 language-servers = []
 formatter = { command = "black" , args = ["--stdin"] }
+
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+# formatter = { command = 'prettier', args = [ "--config", "~/.config/prettier/.prettierrc", "--parser", "typescript"] } 
+# formatter = { command = 'yarn format:write' } 

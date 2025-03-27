@@ -5,6 +5,8 @@ end-of-line-diagnostics = "hint"
 bufferline="always"
 jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
 color-modes = true
+cursorline = true
+lsp.display-inlay-hints = true
 
 [editor.statusline]
 right = ["diagnostics", "primary-selection-length", "selections", "position", "file-encoding"]
@@ -35,6 +37,37 @@ tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 
 [editor.inline-diagnostics]
 cursor-line = "error"
+# cursor-line = "hint"
+
+[keys.insert]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+# i = { o= "normal_mode"}
 
 [keys.normal]
 ret = ["save_selection", "goto_word"] # Go to definition in next view (split windows)
+A-s = "save_selection"
+C-s = ":write"
+
+# Editor navigation
+C-h = "jump_view_left"
+C-H = "swap_view_left"
+C-l= "jump_view_right"
+C-L= "swap_view_right"
+
+# Buffer navigation
+S-l = "goto_next_buffer"
+S-h = "goto_previous_buffer"
+
+# Buffer management
+C-b = { o= ":buffer-close-others" }
+
+
+[keys.normal.space]
+q = ":quit"
