@@ -1,33 +1,40 @@
 theme = "tokyonight_day"
 
-# [editor.gutters]
-# layout = ["line-numbers"]
-
-# [editor.gutters.line-numbers]
-# min-width = 4
-
-[editor.statusline]
-left = ["file-modification-indicator", "mode", "spacer", "spinner", "file-name"]
-center = ["register"]
-right = ["diagnostics", "primary-selection-length", "selections", "position", "file-encoding"]
-separator = "│"
-mode.normal = "\uF120"
-mode.insert = "\uf01f"
-mode.select = "󰴲"
-
-
 [editor]
-# Minimum severity to show a diagnostic after the end of a line:
 end-of-line-diagnostics = "hint"
 bufferline="always"
 jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
+color-modes = true
+
+[editor.statusline]
+right = ["diagnostics", "primary-selection-length", "selections", "position", "file-encoding"]
+left = ["mode", "spacer", "diagnostics", "workspace-diagnostics", "spinner", "spacer", "file-name"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "VISUAL"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 
 [editor.inline-diagnostics]
-# Minimum severity to show a diagnostic on the primary cursor's line.
-# Note that `cursor-line` diagnostics are hidden in insert mode.
 cursor-line = "error"
-# Minimum severity to show a diagnostic on other lines:
-# other-lines = "error"
-#
+
 [keys.normal]
 ret = ["save_selection", "goto_word"] # Go to definition in next view (split windows)
