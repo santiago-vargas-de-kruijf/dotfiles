@@ -1,0 +1,4 @@
+# ~/.config/helix/themes/my-onedark.toml
+inherits = "tokyonight_day"
+
+"diagnostic.error" = { fg = "errorfg", bg = "errorbg", underline = { color = "red" } }
