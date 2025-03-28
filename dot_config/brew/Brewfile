@@ -22,6 +22,7 @@ brew "helix"
 brew "neovim"
 brew "rustup"
 cask "iterm2"
+brew "volta"
 
 # tools
 brew "fd"
