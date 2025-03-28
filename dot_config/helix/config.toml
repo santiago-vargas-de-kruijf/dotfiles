@@ -1,4 +1,4 @@
-theme = "tokyonight_day"
+theme = "catppuccin_latte"
 
 [editor]
 end-of-line-diagnostics = "hint"
