@@ -16,5 +16,3 @@ plugins.rope_autoimport.enabled = true
 name = "typescript"
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
-# formatter = { command = 'prettier', args = [ "--config", "~/.config/prettier/.prettierrc", "--parser", "typescript"] } 
-# formatter = { command = 'yarn format:write' } 
